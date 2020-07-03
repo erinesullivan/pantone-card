@@ -1,0 +1,9 @@
+@import '../../styles/colors';
+
+.pantone-card {
+  background-color: #fff;
+  box-shadow:  1.5em 1.5em 3em darken($backgroundColor, 10%),
+               0.5em 0.5em 2em darken($backgroundColor, 10%), 
+              -1.5em -1.5em 3em lighten($backgroundColor, 10%);
+  max-height: 66vh;
+}

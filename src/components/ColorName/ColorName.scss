@@ -1,0 +1,39 @@
+@import '../../styles/colors';
+
+::-webkit-input-placeholder {
+  color: $textColor;
+}
+:-ms-input-placeholder {
+  color: $textColor;
+}
+::placeholder {
+  color: $textColor;
+}
+
+.card-content {
+  font-size: 3vh;
+  padding: 0.5em 1em 2em 1em;
+  & > * {
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0;
+  }
+  h1 {
+    text-transform: uppercase;
+    sup {
+      font-size: 0.5em;
+      font-weight: normal;
+    }
+  }
+  input {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    width: calc(36vh + 1em);
+    &::-webkit-calendar-picker-indicator {
+      color: lighten($textColor, 50%);
+      cursor: pointer;
+      font-size: 0.75em;
+    }
+  }
+}
